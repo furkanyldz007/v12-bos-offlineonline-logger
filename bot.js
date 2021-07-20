@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 const logs = require('discord-logs');
 logs(client);
-const ayarlar = require("./ayarlar.json")
+
 
 require("./handler/eventHandler")(client);
 
@@ -30,4 +30,4 @@ onlinelog.send(embed)
 });
 
 
-client.login(ayarlar.token);
+client.login(process.env.token);
