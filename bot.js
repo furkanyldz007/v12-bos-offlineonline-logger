@@ -4,6 +4,8 @@ const logs = require('discord-logs');
 logs(client);
 const ayarlar = require("./ayarlar.json")
 
+require("./handler/eventHandler")(client);
+
 client.on("guildMemberOffline", (member, oldStatus) => {
   if(member.id !== "botid") return
 offlinelog = client.channels.cache.get('oflinelogkanalid')
