@@ -1,1 +1,1 @@
-# v12-bos-altyapi
+# v12-offline/online-log-bot
